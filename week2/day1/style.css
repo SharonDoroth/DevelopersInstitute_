@@ -1,0 +1,64 @@
+.cointaner {
+    height: 150vh;
+}
+
+.cointainerdiv {
+    height: 50px;
+    text-align: center;
+}
+.divone {
+    background-color: blueviolet;
+    width: 50px;
+}
+
+.divtwo {
+    background-color: brown;
+    width: 80px;
+}
+
+.divthree {
+    background-color: black;
+    width: 110px;
+}
+
+.divfour {
+    background-color: darkseagreen;
+    width: 140px;
+}
+
+@media (min-width: 1024px) and (max-width: 1450px) {
+    .divone {
+    background-color: blue;
+  }
+    .divtwo {
+    background-color: yellow;
+  }
+    .divthree {
+    background-color: gray;
+  }
+    .divfour {
+    background-color: darksalmon;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+    .divone, .divtwo, .divthree, .divfour {
+        color: black;
+        background-color: yellow;
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divone, .divtwo, .divthree, .divfour {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .divone, .divtwo, .divthree, .divfour {
+        width: 100%;
+    }
+}
+
