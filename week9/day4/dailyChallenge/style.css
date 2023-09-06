@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#searchForm {
+    margin: 20px 0;
+}
+
+#searchInput {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#searchButton {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+#gifContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.gif-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gif-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+#deleteAll {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#deleteAll:hover {
+    background-color: #555;
+}
