@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises XP</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="submit.html" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+    <script src="exercise3.js"></script>
+</body>
+</html>
+<!-- Exercise 1 
+    http://example.com/?name=John%20Doe&message=Hello%2C%20World%21 -->
+
+<!-- Exercise 2 -->
+<!-- When you use the POST method to submit a form, the data you enter in the form isn't shown in the web address (URL) like it is with the GET method. Instead, it's sent to the server behind the scenes. 
+To see the data you sent using POST, open your browser's developer tools, go to the "Network" tab, submit the form, and look at the details of the POST request there.-->
