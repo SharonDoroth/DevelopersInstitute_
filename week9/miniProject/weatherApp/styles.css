@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+form input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.deleteBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
