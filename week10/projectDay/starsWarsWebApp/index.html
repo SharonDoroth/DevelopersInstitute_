@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Star Wars Character Info</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Star Wars Character Info</h1>
+        <div id="loading" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div id="error" style="display: none;">
+            Oh no! That person isn't available.
+        </div>
+        <div id="character-info" style="display: none;">
+            <h2>Name: <span id="character-name"></span></h2>
+            <p>Height: <span id="character-height"></span></p>
+            <p>Gender: <span id="character-gender"></span></p>
+            <p>Birth Year: <span id="character-birthyear"></span></p>
+            <p>Home World: <span id="character-homeworld"></span></p>
+        </div>
+        <button id="get-character-btn">Get Random Character</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
