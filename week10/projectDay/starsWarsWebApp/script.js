@@ -16,19 +16,18 @@ function getRandomCharacter() {
   errorMessage.style.display = "none";
   characterInfo.style.display = "none";
 
-  const randomCharacterId = Math.floor(Math.random() * 83) + 1; // Generate a new random ID
-
+  const randomCharacterId = Math.floor(Math.random() * 83) + 1; 
   const apiUrl = `https://swapi.dev/api/people/${randomCharacterId}`;
 
   const fetchTimeout = setTimeout(() => {
     loadingMessage.style.display = "none";
     errorMessage.style.display = "block";
     errorMessage.textContent = "Request timed out. Please try again.";
-  }, 10000); // 10-second timeout (adjust as needed)
+  }, 10000); 
 
   fetch(apiUrl)
     .then((response) => {
-      clearTimeout(fetchTimeout); // Clear the timeout if the request succeeds
+      clearTimeout(fetchTimeout); 
       if (!response) {
         throw new Error("No response from the server");
       }
