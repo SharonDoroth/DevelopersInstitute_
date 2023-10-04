@@ -3,7 +3,8 @@
 // const link = slugify('about page','_');
 // console.log(link);
 
-//get {getData} = require("./node_modules/data")
+// const { getData } = require("./modules/data");
+import { getData }from "./modules/data";
 
 // const getData = async (ulr) => {
 //     try {
@@ -13,6 +14,6 @@
 //         console.log(error);
 //     }
 // };
-import {getData} from "./modules/data.js"
-
-getData("https://jsonplaceholder.typicode.com/users");
+getData("https://jsonplaceholder.typicode.com/albums").then((data) =>
+  console.log(data)
+);
